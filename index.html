@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Dhanesh!</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+
+    
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    .jumbotron {
+      background-color: #120805;
+      color: #fff;
+      text-align: center;
+      padding: 80px;
+      margin-bottom: 0;
+    }
+
+    .birthday-image {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-heading h2 {
+      font-size: 36px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 30px;
+    }
+
+    .section-content {
+      text-align: center;
+    }
+
+    .gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+
+    .birthday-message {
+      font-size: 24px;
+      margin-bottom: 60px;
+      color: #333;
+    }
+
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      font-weight: bold;
+    }
+
+    .contact-form button {
+      background-color: #ff7f50;
+      border: none;
+      color: #fff;
+      padding: 10px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff5f30;
+    }
+    .image-container {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .image-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .image-container {
+  position: relative;
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
+}
+
+.landscape-banner {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(75, 73, 73, 0.5); /* Overlay color and opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.image-overlay:hover .image-text {
+  opacity: 1;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.video-container video {
+  width: 30%;
+  margin-right: 2%;
+}
+
+.video-container video:last-child {
+  margin-right: 0;
+}
+
+.video-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-card {
+  max-width: 500px;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 8px #4CAF50;
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+  border: 5px solid #45a049;
+}
+.banner-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Adjust the aspect ratio based on your video dimensions (e.g., 16:9 aspect ratio is 56.25%) */
+  position: relative;
+  overflow: hidden;
+}
+
+.card {
+      max-width: 99%;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+        margin-bottom: 20px;
+
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h1 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .card p {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .card img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .card button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .card button:hover {
+      background-color: #45a049;
+    }
+
+    .card1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 20px;
+
+}
+
+
+.closing-card {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  text-align: center;
+}
+
+.closing-card h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.closing-card p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.green-button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.green-button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <script>
+    function showAlert() {
+        alert("Redirecting To  Whatsapp");
+    }
+</script>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Happy Birthday Dhanesh...!</h1>
+    <p class="lead">Wishing you a fantastic day filled with joy and laughter.</p>
+    <img src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\birthday1.jpg" alt="Birthday Image" class="birthday-image">
+  </div>
+
+  <!-- Rest of the code... -->
+
+</body>
+<div class="image-container">
+  <img src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\Snapchat-654000038.jpg" alt="Image" class="landscape-banner">
+  <div class="image-overlay">
+    <div class="image-text">Our Squad</div>
+  </div>
+</div>
+
+</html>
+
+  <div class="container">
+    <div class="section">
+      <div class="section-heading">
+        <h2>Pictures of Naruto (Dhanesh)</h2>
+      </div>
+      
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\Remini20210821200007819.jpg" alt="Image 1" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\IMG_20220910_211437.jpg" alt="Image 2" class="img-fluid">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="gallery-item">
+            <img src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\IMG20211224124730.jpg" alt="Image 3" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      
+       
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-heading">
+        <h2>Our Memories</h2>
+      </div>
+      
+      <div class="section-content">
+        <p class="birthday-message">Thinking back on our shared experiences brings a flood of cherished memories. From the laughter-filled adventures to the comforting moments of support during challenging times, each memory holds a special place in my heart. Whether it was the spontaneous road trips, late-night conversations, or simply sitting in silence, your presence has always brought a sense of warmth and belonging to my life.</p>
+      </div>
+    </div>
+
+    <div class="image-container" style="margin-bottom: 20px;">
+      <img src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\Snapchat-520503813.jpg" alt="Image" class="landscape-banner">
+      <div class="image-overlay"></div>
+    </div>
+    
+    <div class="image-container">
+      <img src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\IMG_20210817_160209.jpg" alt="Image" class="landscape-banner">
+      <div class="image-overlay"></div>
+    </div>
+    
+
+    
+
+    <div class="section">
+      <div class="section-heading">
+        <h2>Some Funny Moments</h2>
+      </div>
+      <div class="section-content">
+        <p class="birthday-message">So, here's to more hilarious misadventures, belly-aching laughter, and creating memories that will have us chuckling for years to come. Thank you for being the comedic genius in my life and for bringing endless laughter into our friendship.</p>
+      </div>
+    </div>
+    
+    <div class="banner-container" class="video-container" style="margin-bottom: 20px;">
+      <div class="video-card">
+
+      <video src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\VID_20211228_164958_109.mp4" controls class="video-banner"></video>
+    </div>
+    </div>
+    
+    <br>
+    <br>
+    
+    <div class="video-container" style="margin-top: 20px;">
+      <div class="video-card">
+        <video src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\1662447334677.mp4" preload="metadata" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)" onclick="toggleFullScreen(this)"></video>
+      </div>
+      <div class="video-card">
+        <video src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\Mivo1662449914818.mp4" preload="metadata" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)" onclick="toggleFullScreen(this)"></video>
+      </div>
+      <div class="video-card">
+        <video src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\1662607065583.mp4" preload="metadata" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)" onclick="toggleFullScreen(this)"></video>
+      </div>
+    </div>
+    
+    <div class="section">
+      <div class="section-heading">
+        <h2>Wishes</h2>
+      </div>
+      <div class="card">
+        <img src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\Remini20210821200007819.jpg" alt="Friendship Image">
+        <h3>Finally, Happiest B'day Dhanesh &#x1F382;</h3>
+        <p>As I sit here reflecting on our journey together, my heart fills with immense gratitude for having you by my side. Words cannot fully capture the depth of our connection and the impact you have made on my life. But let me try to express my wishes, memories, and appreciation for you in this heartfelt message..</p>
+        <p>Firstly, I want to wish you boundless happiness, fulfillment, and success in every aspect of your life. May your dreams take flight, and may you find joy and purpose in everything you do. You have an incredible spirit, my friend, and I believe in your ability to accomplish great things.</p>
+        <p>Our journey together has taught me the value of true friendship—those rare connections that withstand the tests of time and distance. Your loyalty, compassion, and understanding have shown me the power of genuine human connection. I am grateful for the trust we share, the secrets we've entrusted to each other, and the unconditional support that has woven our lives together.</p>
+        <p>Please remember that I am here for you, always. Through the ups and downs, the highs and lows, I will be by your side, cheering you on and offering a shoulder to lean on. Our friendship is a treasure I hold close to my heart, and I am committed to nurturing and celebrating it every step of the way.</p>
+        <p>With heartfelt love and appreciation,</p>
+        <p>SOMESWAR</p>
+        <a href="https://wa.me/9573434598" target="_blank">
+          <button onclick="showAlert()">Wish Dhanesh</button>
+        </a>      </div>
+    <br>
+    <br>
+        <div class="card1">
+          <div class="video-card">
+            <video src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\video_20220712_123849_edit.mp4" controls></video>
+          </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer>
+          <div class="closing-card">
+            <div class="card-content">
+              <h4>Thank You for Visiting!</h4>
+              <p>Wishing you a fantastic day filled with joy and happiness.</p>
+              <p>With love,</p>
+              <p>SOMESWAR</p>
+            </div>
+          </div>
+        </footer>
+        
+
+    <div class="section">
+      <div class="section-heading">
+        <h2>Contact us</h2>
+      </div>
+      <div class="section-content">
+        <p>If you would like to send your wishes or get in touch with us, feel free to use the contact form below:</p>
+        <a href="https://wa.me/9951904116" target="_blank">
+          <button onclick="showAlert()" class="green-button">Get In Touch With Us In Whatsapp</button>
+        </a>
+             
+      </div>
+    </div>
+  </div>
+  <script src="C:\Users\PRINC\OneDrive\Desktop\Happy Birthday\dhanesh1.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
